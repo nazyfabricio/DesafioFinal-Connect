@@ -1,0 +1,16 @@
+.inicio {
+  border: solid blue;
+  display: flex;
+
+  div {
+    border: solid yellow;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  img {
+    height: 83vh;
+  }
+}

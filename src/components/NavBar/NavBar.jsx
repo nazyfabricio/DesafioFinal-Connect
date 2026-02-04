@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./NavBar.module.scss";
 
 //Importe Dos Componentes
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -14,13 +15,13 @@ import ImgPerfil from "../../assets/perfil.jpg";
 function NavBar() {
   return (
     <BrowserRouter>
-      <nav>
+      <nav className={styles.navBarHeader}>
         <Link to="/">
-          <img src={Logo} alt="" />
+          <img className={styles.imgLogo} src={Logo} alt="" />
         </Link>
-        <ul>
+        <ul className={styles.barraNavBar}>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/">Início</Link>
           </li>
           <li>
             <Link to="/acoesDaConnect">Ações da Connect</Link>
@@ -30,7 +31,7 @@ function NavBar() {
           </li>
         </ul>
         <Link to="/perfil">
-          <img src={ImgPerfil} alt="" />
+          <img className={styles.imgFotoPerfil} src={ImgPerfil} alt="" />
         </Link>
       </nav>
 

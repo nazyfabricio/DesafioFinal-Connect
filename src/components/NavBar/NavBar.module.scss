@@ -1,0 +1,37 @@
+.navBarHeader {
+  background-color: #205691;
+  display: flex;
+  justify-content: space-around;
+  height: 15vh;
+  align-items: center;
+
+  .imgFotoPerfil {
+    height: 12vh;
+    border-radius: 100%;
+    border: solid #00aaff 5px;
+  }
+  ul {
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  a {
+    color: #ffffff;
+    font-size: 1.3rem;
+  }
+}
+
+//Vale em telas que tenham a largura entre 201px e 500px
+@media (min-width: 201px) and (max-width: 500px) {
+  .navBarHeader {
+    a {
+      font-size: 0.7rem;
+    }
+    img {
+      height: 5vh;
+    }
+    .imgFotoPerfil {
+      height: 7vh;
+    }
+  }
+}

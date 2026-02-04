@@ -1,0 +1,45 @@
+.footer {
+  background-color: #205691;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+
+  .footerLogo {
+    height: 12vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  p {
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+  }
+}
+.redesSociaisFooter {
+  width: 15vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+  .footer {
+    border: solid yellow;
+    height: 35vh;
+    display: flex;
+    flex-direction: column-reverse;
+
+    p{
+      border: solid;
+      width: 100%
+      
+    }
+
+    .footerLogo {
+    }
+  }
+}
