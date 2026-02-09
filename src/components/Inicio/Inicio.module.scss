@@ -1,16 +1,27 @@
 .inicio {
-  border: solid blue;
   display: flex;
 
   div {
-    border: solid yellow;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 5%;
+
+    h1 {
+      font-size: 4.5rem;
+      color: #205691;
+      width: 45vw;
+      height: 15vh;
+    }
+
+    p {
+      color: #205691;
+      width: 34vw;
+    }
   }
 
   img {
     height: 83vh;
+    padding-left: 10%;
   }
 }
