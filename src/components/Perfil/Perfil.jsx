@@ -4,50 +4,35 @@ import FotoPerfil from "../../assets/perfil.jpg";
 
 function Perfil() {
   return (
-    <>
-      <section className={styles.perfil}>
+    <section className={styles.containerTelaPerfil}>
+      <article>
+        <img src={FotoPerfil} alt="Foto de perfil de Nazy Fabricio" />
 
-        <article>
-     <img src={FotoPerfil} alt="" />
+        <div className={styles.cardInfo}>
+          <h2>Nazy Fabricio</h2>
+          <h3>Voluntário ativo</h3>
 
-     <div>
-<h2>Nazy Fabricio</h2>
-  <h3>Voluntário ativo</h3>
+          <p className={styles.paragrafoSobreMim}>
+            Apaixonado por fazer a diferença na comunidade. Acredito que
+            pequenas ações podem transformar vidas e estou sempre em busca de
+            novas oportunidades para ajudar.
+          </p>
 
+          <address>
+            <p>Recife, PE</p>
+            <p>nazym931@gmail.com</p>
+            <p>Membro desde 2025</p>
+          </address>
 
-
-        <p className={styles.paragrafoSobreMim}>
-          Sou uma aspirante na tecnologia, nunca me interessei muito nessa área,
-          mas de 2023 pra cá começou a ser minha paixão e graças ao curso da Vai
-          Na Web pude apreder muito. Muito Obriagda à Vai Na Web{" "}
-        </p>
-
-<address>
-<p>Recife, PE</p>
-        <p>nazym931@gmail.com</p>
-        <p>Membro desde 2025</p>
-
-</address>
-
-<ul className={styles.AreasDeInteresse}>
- 
-          <li>Educação</li>
-          <li>Meio Ambiente</li>
-          <li>Assistência Social</li>
-          <li>Design</li>
-        
-
-</ul>
-     </div>
-
-        </article>
-   
-        
-      
-        
-        >
-      </section>
-    </>
+          <ul className={styles.listaDeInteresse}>
+            <li>Educação</li>
+            <li>Meio Ambiente</li>
+            <li>Assistência Social</li>
+            <li>Design</li>
+          </ul>
+        </div>
+      </article>
+    </section>
   );
 }
 export default Perfil;
