@@ -25,3 +25,33 @@
     padding-left: 10%;
   }
 }
+
+@media (min-width: 201px) and (max-width: 500px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-around;
+
+    div {
+      height: 35vh;
+      h1 {
+        font-size: 2.5rem;
+        width: 100%;
+        display: flex;
+        text-align: center;
+      }
+      p {
+        width: 90vw;
+        font-size: 0.75rem;
+        text-align: center;
+      }
+    }
+
+    img {
+      border-radius: 100%;
+      width: 93vw;
+      height: 50vh;
+    }
+  }
+}

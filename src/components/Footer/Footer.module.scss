@@ -29,17 +29,22 @@
 
 @media (min-width: 201px) and (max-width: 500px) {
   .footer {
-    border: solid yellow;
     height: 35vh;
     display: flex;
     flex-direction: column-reverse;
+    padding-top: 2%;
 
     p {
-      border: solid;
       width: 100%;
+      font-size: 0.8rem;
     }
 
     .footerLogo {
+      width: 80vw;
+    }
+
+    .redesSociaisFooter {
+      width: 80vw;
     }
   }
 }
